@@ -1,5 +1,5 @@
-var assert = require("assert")
-var getUrl = require("../")
+var getUrl = require("../index")
+require("test").setup();
 
 describe("github url from username/repo", function () {
   it("returns a github url for the username/repo", function () {
@@ -32,3 +32,5 @@ describe("github url from username/repo", function () {
     assert.equal("https://github.com/component/-dow-nloader.j-s", url)
   })
 })
+
+require("test").run();
